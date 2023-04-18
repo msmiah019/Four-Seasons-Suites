@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Newsreader', serif;
+}
+
+/* -----------------General styles---------------------------- */
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+#hRuler {
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000000;
+    margin: 0% 5%;
+    margin-bottom: 70px;
+}
+
+/* --------------------------------------Greeting Section--------------------------------------------- */
+.welcomeSection {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: transparent;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#videoBackground {
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#headingText {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+
+#headingText h1 {
+    color: #ffffff;
+    font-size: 65px;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------Experience Section---------------------------------------- */
+.experienceSection {
+    position: relative;
+    height: 125vh;
+}
+
+#expBg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    padding: 130px 100px 100px 100px;
+}
+
+#expBg img {
+    height: 100%;
+    width: 100%;
+}
+
+#customerExp {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0px 200px;
+}
+
+#customerExp p {
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ----------------------------------------------Social Media Section------------------------------------------ */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    /* background-color: rgb(64, 134, 197); */
+    width: 300%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-item {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-item img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slider-control-prev,
+  .slider-control-next {
+    background-color: transparent;
+    color:gold;
+    font-weight:bolder;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .slider-control-prev {
+    margin-right: 40px;
+  }
+  
+  .slider-control-next {
+    margin-left: 40px;
+  }
+  .btnDiv{
+    height: 90px;
+    margin-top: 40px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .btnDiv button{
+    padding: 13px 30px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: ease 0.5s;
+  }
+  .btnDiv button:hover{
+    background-color: #ffffff;
+    border: solid #000000 1px;
+    color: #000000;
+  }
+
+
+
+
+
+/* ---------------------------------------------All responsive designs----------------------------------------- */
+
+/* ---------------------------------------------Screen size max 768px------------------------------------------ */
+@media only screen and (max-width: 768px) {
+
+    /* ---------------Greeting Section------------ */
+
+    .welcomeSection {
+        margin-bottom: 0px;
+    }
+
+    /* ----------------Styles for navigation------------------------ */
+    #navBar .navLinksContainer {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background-color: blue;
+        height: 100vh;
+        width: 250px;
+        z-index: 2;
+        box-shadow: -2px 1px 1px rgba(255, 255, 255, 0.5);
+    }
+
+    #navItems {
+        display: block;
+        background-color: #000000;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .navLinksContainer #navItems li {
+        display: list-item;
+        margin: 10px;
+        padding: 5px 0px;
+        width: 95%;
+        text-align: left;
+        position: relative;
+    }
+
+    .navLinksContainer #navItems li::after {
+        content: "";
+        width: 0%;
+        height: 1px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 3;
+        transition: 0.8s;
+
+    }
+
+    .navLinksContainer #navItems li:hover::after {
+        width: 100%;
+    }
+
+    #navItems li:hover {
+        background-color: transparent;
+    }
+
+    #navItems li:hover a {
+        color: #ffffff;
+    }
+
+
+    #navBar li:last-child {
+        background-color: transparent;
+    }
+
+    #navBar li:last-child a {
+        color: #ffffff;
+    }
+
+    #smallDeviceMenuBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #smallDeviceMenuBar span {
+        margin-right: 20px;
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Quando', serif;
+    }
+
+
+    #navBar .fa-solid {
+        display: block;
+        color: #ffffff;
+        font-size: 25px;
+        margin: 10px;
+        margin-left: 20px;
+        transition: 0.5s;
+    }
+
+    #navBar .fa-solid:hover {
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    /* --------------------------------------------------- */
+
+    #videoBackground {
+        display: none;
+    }
+
+    #headingText {
+        background: cadetblue url("assets/images/sm_sc_bg.jpg") no-repeat center center / cover;
+    }
+
+    #headingText h1 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    /* -------------------------Greeting Section Ends--------------------------- */
+
+    /* ------------------------Experience Section Start-------------------------- */
+    #expBg {
+        padding: 0;
+    }
+
+    .experienceSection {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #customerExp {
+        padding: 0px;
+        margin: 0px;
+        height: 40%;
+        width: 70%;
+    }
+
+    #expBg img {
+        display: none;
+    }
+
+    /* ------------------------Experience Section End-------------------------- */
+
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------Screen size between min 768px and max 1080px---------------------------------- */
+@media only screen and (max-width: 1080px) {
+
+    /* --------------Styles for navigation------------- */
+    #navItems li {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        padding: 5px 10px;
+        margin: 0px 6px;
+    }
+
+    #navItems li a {
+        font-size: 13px;
+    }
+
+    /* ----------------------------------------------- */
+
+    #headingText h1 {
+        margin-bottom: 60px;
+    }
+
+    .welcomeSection {
+        margin-bottom: 0px;
+    }
+
+}
