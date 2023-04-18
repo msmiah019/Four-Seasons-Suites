@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Newsreader&family=Quando&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="navigationStyle.css">
+    <link rel="stylesheet" type="text/css" href="footerMenu.css">
+    <link rel="stylesheet" type="text/css" href="stylesheetContactPage.css">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <!-- -------------------------------Greeting Section----------------------------------- -->
+    <header>
+        <nav id="navBar">
+            <a href="#" id="navLogo">
+                <img src="assets/images/fss_logo.png" alt="Website Logo">
+            </a>
+            <div class="navLinksContainer" id="smallDeviceMenu">
+                <div id="smallDeviceMenuBar">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <span> Menu </span>
+                </div>
+                <ul id="navItems">
+                    <li><a href="#"> about </a></li>
+                    <li><a href="#"> overview </a></li>
+                    <li><a href="#"> locations </a></li>
+                    <li><a href="#"> reserve </a></li>
+                    <li><a href="#"> rooms </a></li>
+                    <li><a href="#"> login </a></li>
+                </ul>
+            </div>
+            <i style="z-index: 77;" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- -------------------------------------------------------------------------------------------- -->
+    </header>
+    
+    <section class="topSection">
+        <div class="imagePart">
+            <img src="assets/images/img1.png" alt="An Images">
+        </div>
+        <form class="formPart">
+            <div class="formPartition">
+                <div class="userInfo">
+                    <div class="nameBox boxes">
+                        <label for="userName">Your name: </label> <br>
+                        <input type="text" id="userName" name="user-name">
+                    </div>
+                    <div class="emailBox boxes">
+                        <label for="userEmail">Email:</label> <br>
+                        <input type="email" id="userEmail" name="user-email">
+                    </div>
+                    <div class="phoneBox boxes">
+                        <label for="userPhone">Your phone:</label><br>
+                        <input type="tel" id="userPhone" name="userPhone" placeholder="+44" required>
+                    </div>
+                    <div class="inquiryBox boxes">
+                        <label for="userInquiries"> Inquiry Type: </label><br>
+                        <select id="userInquiries" name="user-inquiry" required>
+                            <option value="" selected>Choose an option</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="messageBox">
+                    <label for="userMessage">Please write your message : </label> <br>
+                    <textarea id="userMessage" name="message"></textarea>
+                </div>
+                <div class="submitBtnBox">
+                    <input class="buttonStyle" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <section class="mapSection">
+        <div class="actualMap mapSecItem">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14035.94379801791!2d0.07940148199963334!3d51.54572248752502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1680381429176!5m2!1sen!2suk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mapText  mapSecItem">
+            <h2> Our hotel is fantasy kindom located in the <br>
+                epicenter of the four exciting cities in the united <br>
+                kindom
+            </h2>
+            <button class="buttonStyle">Where to find us</button>
+        </div>
+    </section>
+
+    <div id="hRuler"></div>
+
+
+    <!-- -----------------------Footer Menu------------------------------------------- -->
+    <div class="footerMenu">
+        <div class="footerPages">
+            <h2> pages </h2>
+            <div class="footerMenuContents">
+                <div class="contentsLeft">
+                    <a href = "#">home </a>
+                    <a href = "#">about </a>
+                    <a href = "#">contact </a>
+                </div>
+                <div class="contentsRight">
+                    <a href = "#">rooms</a> </a>
+                    <a href = "#">restaurants </a>
+                    <a href = "#">overview </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footerContactInfo">
+            <h2> contact us </h2>
+            <div class="footerMenuContents">
+                <div class="contentsLeft">
+                    <a href = "#">Address </a>
+                    <a href = "#">+44(0)7777888999 </a>
+                    <a style="text-transform: none;" href = "#">fss@fourseasonssuites.com </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footerSocialMedia">
+            <h2> follow us </h2>
+            <div class="footerMenuContents">
+                <div class="contentsLeft">
+                    <a href = "#">instagram </a>
+                    <a href = "#">facebook </a>
+                    <a href = "#">twitter </a>
+                </div>
+                <div class="contentsRight ">
+                    <a href = "#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href = "#"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href = "#"><i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------- -->
+
+    <footer>
+        <p> &copy; Copyright four feasons suites 2023 </p>
+        <p> All rights reserved. </p>
+    </footer>
+
+    </div>
+
+
+
+
+
+    <script src="navigationScript.js">
+
+    </script>
+</body>
+
+</html>
