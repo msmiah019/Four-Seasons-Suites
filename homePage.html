@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link style="border-radius: 10%;" rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Newsreader&family=Quando&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/navigationStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/footerMenu.css">
+    <link rel="stylesheet" type="text/css" href="styles/styleHomePage.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <a href="#" id="navLogo">
+                <img src="assets/images/fss_logo.png" alt="Website Logo">
+            </a>
+            <div class="navLinksContainer" id="smallDeviceMenu">
+                <div id="smallDeviceMenuBar">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <span> Menu </span>
+                </div>
+                <ul id="navItems">
+                    <li><a href="#"> about </a></li>
+                    <li><a href="#"> overview </a></li>
+                    <li><a href="#"> locations </a></li>
+                    <li><a href="#"> reserve </a></li>
+                    <li><a href="#"> rooms </a></li>
+                    <li><a href="#"> login </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bookingSection">
+            <img class="topSectionBg" src = "assets/images/home_page_imgs/home_page_bg.jpg" alt="Luxurious Image">
+            <div class="bookingBox">
+                <!-- Check in, check out part -->
+                <div class="bookingBoxTop">
+                    <div class="checkIn bookingBoxParts">
+                        <label for="checkInDate">check in</label>
+                        <input type="date" id="checkInDate" name="checkInDate" value = "2023/0/12">
+                        <input type="time" id="checkInTime" name="checkInTime" value="02:00" step="3600">
+                    </div>
+                    <div class="chooseDate bookingBoxParts">
+                        <div class="ratingStars">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <label> choose date </label>
+
+                    </div>
+                    <div class="checkOut bookingBoxParts">
+                        <label for="checkOutDate">check out</label>
+                        <input type="date" id="checkOutDate" name="checkOutDate">
+                        <input type="time" id="checkOutTime" name="checkOutTime" value="02:00" step="3600">
+                    </div>
+                </div>
+                <!-- ---------------------------------- -->
+                <div class="bookingBoxBottom">
+                    <div class="dateDisplayBox">
+                        <span id="showDate"></span>
+                        <span id="showMonth"></span>
+                        <span id="showYear"></span>
+                    </div>
+                    <div class="bookingBtn">
+                        <input class="buttonStyle" type="submit" value="BOOK NOW">
+                    </div>
+                    <p>
+                        Welcome to our website. You can easily search and book <br>
+                        accomodations for your next trip.
+                    </p>
+                </div>
+                
+            </div>
+
+        </section>
+        <div id="hRuler"></div>
+
+        <section class="naturalAttractionSection">
+            <img src="assets/images/home_page_imgs/nature_section_bg.jpg" alt="Nature Image" >
+            <div class="natureSectionText">
+                <h2 class="natureSectionItems">
+                    Visit our natural paradise<br> and reconnect with <br> yourself
+                </h2>
+                <p class="natureSectionItems">
+                    Welcome to Four Seasons Suites, another home right away from <br> your home. 
+                    Our hotel offers a warm and inviting atmosphere, along <br> with top-notch
+                    amenities to make your stay as comfortable and <br>memorable as possible. 
+                </p>
+                <input class="buttonStyle natureSectionItems" type="submit" value="BROWSE MORE">
+            </div>
+        </section>
+        <div id="hRuler"></div>
+
+        <section class="restaurantSection">
+            <div class="restTexts">
+                <h2> restaurants</h2>
+                <p> Find out our five start restaurants in the heart of london.</p>
+            </div>
+            <div class="restCardsContainer">
+                <div class="restaurantCard">
+                    <div class="cardTop">
+                        <img src="assets/images/home_page_imgs/card_img_2.jpg" alt ="A Restaurant Food Image">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardLeft">
+                            <h2> Fratelli Pizzeria</h2>
+                            <p> 
+                                Fratelli pizzeria is a family owned Itallian restaurant <br>
+                                located in the heart of London.
+                            </p>
+                            <address>
+                                address: 53 downing dtreet w1ch 3cl
+                            </address>
+                        </div>
+                        <div class="cardRight">
+                            <div class="restaurantRatings">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <input id="retaurantBookingBtn" class="buttonStyle" type="submit" value="BOOK NOW">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="restaurantCard">
+                    <div class="cardTop">
+                        <img src="assets/images/home_page_imgs/card_img_1.jpg" alt ="A Restaurant Food Image">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardLeft">
+                            <h2> Fratelli Pizzeria</h2>
+                            <p> 
+                                Fratelli pizzeria is a family owned Itallian restaurant <br>
+                                located in the heart of London.
+                            </p>
+                            <address>
+                                address: 53 downing dtreet w1ch 3cl
+                            </address>
+                        </div>
+                        <div class="cardRight">
+                            <div class="restaurantRatings">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <input id="retaurantBookingBtn" class="buttonStyle" type="submit" value="BOOK NOW">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="restaurantCard">
+                    <div class="cardTop">
+                        <img src="assets/images/home_page_imgs/card_img_3.jpg" alt ="A Restaurant Food Image">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardLeft">
+                            <h2> Fratelli Pizzeria</h2>
+                            <p> 
+                                Fratelli pizzeria is a family owned Itallian restaurant <br>
+                                located in the heart of London.
+                            </p>
+                            <address>
+                                address: 53 downing dtreet w1ch 3cl
+                            </address>
+                        </div>
+                        <div class="cardRight">
+                            <div class="restaurantRatings">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <input id="retaurantBookingBtn" class="buttonStyle" type="submit" value="BOOK NOW">
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+
+        </section>
+        <div id="hRuler"></div>
+
+
+
+    </main>
+    <!-- -----------------------Footer Menu------------------------------------------- -->
+    <!-- --------------------------Footer Part-------------------------------- -->
+    <footer>
+        <div class="footerMenu">
+            <div class="footerPages">
+                <h2> pages </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="#">home </a>
+                        <a href="#">about </a>
+                        <a href="#">contact </a>
+                    </div>
+                    <div class="contentsRight">
+                        <a href="#">rooms</a> </a>
+                        <a href="#">restaurants </a>
+                        <a href="#">overview </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footerContactInfo">
+                <h2> contact us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="#">Address </a>
+                        <a href="#">+44(0)7777888999 </a>
+                        <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerSocialMedia">
+                <h2> follow us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="#">instagram </a>
+                        <a href="#">facebook </a>
+                        <a href="#">twitter </a>
+                    </div>
+                    <div class="contentsRight ">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyrightBanner">
+            <p> &copy; Copyright four feasons suites 2023 </p>
+            <p> All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script src="navigationScript.js"></script>
+    <script src="scriptHomePage.js"></script>
+    <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
