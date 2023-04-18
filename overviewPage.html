@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Newsreader&family=Quando&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet_overviewPage.css">
+    <title>overview page</title>
+</head>
+
+<body>
+    <!-- -------------------------------Greeting Section----------------------------------- -->
+    <section class="welcomeSection">
+        <div id="videoBackground">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/videos/luxurious_hotels_short.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav id="navBar">
+            <a href="#" id="navLogo">
+                <img src="assets/images/fss_logo.png" alt="Website Logo">
+            </a>
+            <div class="navLinksContainer" id="smallDeviceMenu">
+                <div id="smallDeviceMenuBar">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <span> Menu </span>
+                </div>
+                <ul id="navItems">
+                    <li><a href="#"> about </a></li>
+                    <li><a href="#"> overview </a></li>
+                    <li><a href="#"> locations </a></li>
+                    <li><a href="#"> reserve </a></li>
+                    <li><a href="#"> rooms </a></li>
+                    <li><a href="#"> login </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div id="headingText">
+            <h1>Discover a world of <br> comfort and <br> hospitality at our hotel</h1>
+        </div>
+
+    </section>
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- -------------------------------Experience Section----------------------------------- -->
+    <section class="experienceSection">
+        <div id="customerExp">
+            <h2> Find out what it's like to spend a <br> day at our hotel</h2>
+            <p id="inspirationalText">
+                Experience unparalleled luxury and comfort at our hotel where
+                every <br> detail has been thoughtfully crafted to exceed your expectations.
+            </p>
+        </div>
+        <div id="expBg">
+            <img src="assets/images/swimming_pole.jpg">
+        </div>
+    </section>
+    <div id="hRuler"></div>
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <!-- -------------------------------Social Media Section----------------------------------- -->
+    <section style="margin-bottom: 50px;" class="socialMediaSection">
+        <h1> Instagram </h1>
+        <p> Follow us on social media </p>
+
+        <div class="slider">
+            <div class="slider-container">
+              <div class="slider-item">
+                <img src="assets/images/img_alb_1.jpg" alt="Image 1">
+              </div>
+              <div class="slider-item">
+                <img src="assets/images/img_alb_2.jpg" alt="Image 2">
+              </div>
+              <div class="slider-item">
+                <img src="assets/images/img_alb_3.jpg" alt="Image 3">
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button class="slider-control-prev">&lt;</button>
+              <button class="slider-control-next">&gt;</button>
+            </div>
+          </div>
+          
+        <div class="btnDiv">
+            <button id="socialMediaButton">follow us</button>
+        </div>
+    </section>
+
+    <div id="hRuler"></div>
+
+
+
+    <script src="scripts_overviewPage.js">
+
+    </script>
+</body>
+
+</html>
