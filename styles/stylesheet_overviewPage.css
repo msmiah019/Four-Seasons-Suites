@@ -22,6 +22,12 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+h3{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
 
 p {
     font-size: 16px;
@@ -30,11 +36,24 @@ p {
 }
 
 #hRuler {
-    height: 4px;
+    height: 2px;
     border-radius: 2px;
     background-color: #000000;
     margin: 0% 5%;
     margin-bottom: 70px;
+}
+.buttonStyle{
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: solid 1px #000000;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.buttonStyle:hover{
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* --------------------------------------Greeting Section--------------------------------------------- */
@@ -182,22 +201,85 @@ p {
     padding: 20px 0px;
     text-align: center;
   }
-  .btnDiv button{
-    padding: 13px 30px 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    transition: ease 0.5s;
+
+  /* --------------Extracurricular activities section starts here-------------------------------- */
+  .extraActivitySection{
+    height: 120vh;
+    /* background-color: cadetblue; */
   }
-  .btnDiv button:hover{
-    background-color: #ffffff;
-    border: solid #000000 1px;
-    color: #000000;
+  .extraActivitySecHeadings{
+    height: 20%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aquamarine; */
   }
 
+  .exActSecCardsWrapper{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exActItems{
+    height: 80%;
+    width: 24%;
+    /* background-color: aqua; */
+    margin: 10px 20px;
+  }
+  .exActCards{
+    height: 85%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+  }
+  .exActCards:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
+  }
+  .cardTop{
+    height: 55%;
+    width: 100%;
+  }
+  .exActCards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cardBottom{
+    height: 45%;
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .cardBottom::after{
+    content: "";
+    height: 0.5px;
+    width: 20%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.6s;
+  }
+  .exActCards:hover .cardBottom::after{
+    width: 70%;
+  }
+  .extActCardsBtns{
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+  }
+ 
 
 
 
@@ -212,98 +294,6 @@ p {
     .welcomeSection {
         margin-bottom: 0px;
     }
-
-    /* ----------------Styles for navigation------------------------ */
-    #navBar .navLinksContainer {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        background-color: blue;
-        height: 100vh;
-        width: 250px;
-        z-index: 2;
-        box-shadow: -2px 1px 1px rgba(255, 255, 255, 0.5);
-    }
-
-    #navItems {
-        display: block;
-        background-color: #000000;
-        padding: 10px;
-        text-align: left;
-    }
-
-    .navLinksContainer #navItems li {
-        display: list-item;
-        margin: 10px;
-        padding: 5px 0px;
-        width: 95%;
-        text-align: left;
-        position: relative;
-    }
-
-    .navLinksContainer #navItems li::after {
-        content: "";
-        width: 0%;
-        height: 1px;
-        border-radius: 3px;
-        background-color: #ffffff;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        z-index: 3;
-        transition: 0.8s;
-
-    }
-
-    .navLinksContainer #navItems li:hover::after {
-        width: 100%;
-    }
-
-    #navItems li:hover {
-        background-color: transparent;
-    }
-
-    #navItems li:hover a {
-        color: #ffffff;
-    }
-
-
-    #navBar li:last-child {
-        background-color: transparent;
-    }
-
-    #navBar li:last-child a {
-        color: #ffffff;
-    }
-
-    #smallDeviceMenuBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #smallDeviceMenuBar span {
-        margin-right: 20px;
-        font-size: 25px;
-        color: #ffffff;
-        font-family: 'Quando', serif;
-    }
-
-
-    #navBar .fa-solid {
-        display: block;
-        color: #ffffff;
-        font-size: 25px;
-        margin: 10px;
-        margin-left: 20px;
-        transition: 0.5s;
-    }
-
-    #navBar .fa-solid:hover {
-        transform: rotate(180deg) scale(1.2);
-    }
-
     /* --------------------------------------------------- */
 
     #videoBackground {
@@ -346,6 +336,24 @@ p {
 
     /* ------------------------Experience Section End-------------------------- */
 
+    .extraActivitySection{
+      height: auto;
+    }
+    .extraActivitySecHeadings{
+      height: 200px;
+    }
+    .exActSecCardsWrapper{
+      flex-direction: column;
+    }
+    .exActItems{
+      width: 70%;
+    }
+    .extActCardsBtns{
+      align-items: center;
+    }
+   
+
+
 
 
 
@@ -358,27 +366,19 @@ p {
 /* -----------------------------Screen size between min 768px and max 1080px---------------------------------- */
 @media only screen and (max-width: 1080px) {
 
-    /* --------------Styles for navigation------------- */
-    #navItems li {
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        padding: 5px 10px;
-        margin: 0px 6px;
-    }
-
-    #navItems li a {
-        font-size: 13px;
-    }
-
-    /* ----------------------------------------------- */
-
     #headingText h1 {
         margin-bottom: 60px;
     }
 
     .welcomeSection {
         margin-bottom: 0px;
+    }
+    .exActItems{
+      height: 100vh;
+      width: 60%;
+    }
+    footer{
+      margin-top: 50px;
     }
 
 }

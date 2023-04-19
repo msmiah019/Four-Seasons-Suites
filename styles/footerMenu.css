@@ -69,4 +69,13 @@ footer .copyrightBanner p{
     .footerMenu div{
         margin: 10px 20px;
     }
+    .footerMenu div h2{
+        font-size: 25px;
+    }
+    .footerMenuContents div a{
+        font-size: 18px;
+    }
+    footer .copyrightBanner p{
+        font-size: 18px;
+    }
 }
