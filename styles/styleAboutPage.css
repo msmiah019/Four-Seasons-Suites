@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Newsreader', serif;
+}
+
+/* -----------------General styles---------------------------- */
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+#hRuler {
+    height: 2px;
+    border-radius: 2px;
+    background-color: #000000;
+    margin: 0% 5%;
+    margin-bottom: 70px;
+}
+.buttonStyle{
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: solid 1px #000000;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.buttonStyle:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
